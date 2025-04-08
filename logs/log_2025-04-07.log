@@ -1,0 +1,35 @@
+2025-04-07 14:15:55,777 - INFO - Configuration file loaded successfully
+2025-04-07 14:16:02,309 - INFO - Configuration file loaded successfully
+2025-04-07 14:16:03,489 - INFO - ✅ Data fetched from 'hotel_reservation' and saved to RAW folder at: artifacts/raw/raw.csv/raw_data.csv
+2025-04-07 14:16:04,103 - INFO - ✅ Train and test data saved to: artifacts/raw/train.csv, artifacts/raw/test.csv
+2025-04-07 14:17:32,594 - INFO - Configuration file loaded successfully
+2025-04-07 14:17:37,833 - INFO - Configuration file loaded successfully
+2025-04-07 14:17:38,990 - INFO - ✅ Data fetched from 'hotel_reservation' and saved to RAW folder at: artifacts/raw.csv/raw_data.csv
+2025-04-07 14:17:39,552 - INFO - ✅ Train and test data saved to: artifacts/train.csv, artifacts/test.csv
+2025-04-07 14:18:21,048 - INFO - Configuration file loaded successfully
+2025-04-07 14:18:26,471 - INFO - Configuration file loaded successfully
+2025-04-07 14:18:27,687 - INFO - ✅ Data fetched from 'hotel_reservation' and saved to RAW folder at: artifacts/raw_csv/raw_data.csv
+2025-04-07 14:18:28,326 - INFO - ✅ Train and test data saved to: artifacts/train.csv, artifacts/test.csv
+2025-04-07 14:58:30,156 - INFO - Configuration file loaded successfully
+2025-04-07 14:58:35,462 - INFO - Configuration file loaded successfully
+2025-04-07 14:58:36,540 - INFO - ✅ Data fetched from 'hotel_reservation' and saved to RAW folder at: artifacts/raw_csv/raw_data.csv
+2025-04-07 14:58:37,081 - INFO - ✅ Train and test data saved to: artifacts/train.csv, artifacts/test.csv
+2025-04-07 15:21:58,575 - INFO - Configuration file loaded successfully
+2025-04-07 15:21:59,720 - INFO - ✅ Data fetched from 'hotel_reservation' and saved to RAW folder at: artifacts/raw_csv/raw_data.csv
+2025-04-07 15:22:00,264 - INFO - ✅ Train and test data saved to: artifacts/train.csv, artifacts/test.csv
+2025-04-07 15:28:15,981 - INFO - Configuration file loaded successfully
+2025-04-07 15:28:21,661 - INFO - Configuration file loaded successfully
+2025-04-07 15:28:22,788 - INFO - ✅ Data fetched from 'hotel_reservation' and saved to RAW folder at: artifacts/raw_csv/raw_data.csv
+2025-04-07 15:28:23,371 - INFO - ✅ Train and test data saved to: artifacts/train.csv, artifacts/test.csv
+2025-04-07 16:06:23,067 - INFO - Configuration file loaded successfully
+2025-04-07 16:06:28,917 - INFO - Configuration file loaded successfully
+2025-04-07 16:06:28,919 - INFO - 🚀 Starting data ingestion process
+2025-04-07 16:06:30,107 - INFO - ✅ Data fetched from 'hotel_reservation' and saved to RAW folder at: artifacts/raw_csv/raw_data.csv
+2025-04-07 16:06:30,689 - INFO - ✅ Train and test data saved to: artifacts/train.csv, artifacts/test.csv
+2025-04-07 16:06:30,706 - INFO - ✅ Data ingestion process completed successfully
+2025-04-07 16:07:26,748 - INFO - Configuration file loaded successfully
+2025-04-07 16:07:32,794 - INFO - Configuration file loaded successfully
+2025-04-07 16:07:32,796 - INFO - 🚀 Starting data ingestion process
+2025-04-07 16:07:34,089 - INFO - ✅ Data fetched from 'hotel_reservation' and saved to RAW folder at: artifacts/raw_csv/raw_data.csv
+2025-04-07 16:07:34,789 - INFO - ✅ Train and test data saved to: artifacts/train.csv, artifacts/test.csv
+2025-04-07 16:07:34,804 - INFO - ✅ Data ingestion process completed successfully

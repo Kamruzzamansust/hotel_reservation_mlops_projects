@@ -1,0 +1,173 @@
+2025-04-08 10:53:13,093 - INFO - Configuration file loaded successfully
+2025-04-08 10:53:13,093 - ERROR - An error occurred while loading the configuration file: stat: path should be string, bytes, os.PathLike or integer, not dict
+2025-04-08 10:55:17,045 - INFO - Configuration file loaded successfully
+2025-04-08 10:55:17,046 - ERROR - An error occurred while loading the configuration file: stat: path should be string, bytes, os.PathLike or integer, not dict
+2025-04-08 10:56:33,633 - INFO - Configuration file loaded successfully
+2025-04-08 10:56:33,634 - ERROR - An error occurred while loading the configuration file: stat: path should be string, bytes, os.PathLike or integer, not dict
+2025-04-08 10:59:11,139 - INFO - Configuration file loaded successfully
+2025-04-08 10:59:11,140 - ERROR - An error occurred while loading the configuration file: stat: path should be string, bytes, os.PathLike or integer, not dict
+2025-04-08 11:02:35,711 - INFO - Starting our Model Training pipeline
+2025-04-08 11:02:35,711 - INFO - Starting our MLFLOW experimentation
+2025-04-08 11:02:35,711 - INFO - Logging the training and testing datset to MLFLOW
+2025-04-08 11:02:35,724 - INFO - Loading data from artifacts/processed/processed_train.csv
+2025-04-08 11:02:35,725 - INFO - Loading data
+2025-04-08 11:02:35,777 - INFO - Loading data from artifacts/processed/processed_test.csv
+2025-04-08 11:02:35,778 - INFO - Loading data
+2025-04-08 11:02:35,798 - INFO - Data splitted sucefully for Model Training
+2025-04-08 11:02:35,798 - INFO - Initializing Our Model
+2025-04-08 11:02:35,798 - INFO - Started Our Hyparparameter tuning
+2025-04-08 11:02:35,799 - INFO - Started Our Hyparparameter tuning
+2025-04-08 11:09:17,199 - INFO - Hyperparameter tuning completed
+2025-04-08 11:09:17,200 - INFO - Best paramters are : {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2025-04-08 11:09:17,200 - INFO - Evaluating our model
+2025-04-08 11:09:17,412 - INFO - Accuracy Score : 0.8785969084423305
+2025-04-08 11:09:17,413 - INFO - Precision Score : 0.8634703196347032
+2025-04-08 11:09:17,413 - INFO - Recall Score : 0.8994054696789536
+2025-04-08 11:09:17,413 - INFO - F1 Score : 0.8810716365754222
+2025-04-08 11:09:17,413 - INFO - saving the model
+2025-04-08 11:09:17,528 - INFO - Model saved to artifacts/models/lgbm.pkl
+2025-04-08 11:09:17,528 - INFO - Logging the model into MLFLOW
+2025-04-08 11:09:17,534 - INFO - Logging Params and metrics to MLFLOW
+2025-04-08 11:09:17,552 - INFO - Model Training sucesfullly completed
+2025-04-08 11:09:17,556 - INFO - Model Training pipeline completed
+2025-04-08 11:09:17,556 - INFO - Completed our Model Training pipeline
+2025-04-08 11:19:53,190 - INFO - 🚀 Starting data ingestion process
+2025-04-08 11:19:54,245 - INFO - ✅ Data fetched from 'hotel_reservation' and saved to RAW folder at: artifacts/raw_csv/raw_data.csv
+2025-04-08 11:19:54,653 - INFO - ✅ Train and test data saved to: artifacts/train.csv, artifacts/test.csv
+2025-04-08 11:19:54,666 - INFO - ✅ Data ingestion process completed successfully
+2025-04-08 11:19:54,672 - INFO - Loading data from RAW directory
+2025-04-08 11:19:54,672 - INFO - Loading data
+2025-04-08 11:19:54,765 - INFO - Loading data
+2025-04-08 11:19:54,786 - INFO - Starting our Data Processing step
+2025-04-08 11:19:54,786 - INFO - Dropping the columns
+2025-04-08 11:19:54,820 - INFO - Applying Label Encoding
+2025-04-08 11:19:54,849 - INFO - Label Mappings are : 
+2025-04-08 11:19:54,849 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-04-08 11:19:54,849 - INFO - required_car_parking_space : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-04-08 11:19:54,849 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-04-08 11:19:54,849 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-04-08 11:19:54,849 - INFO - repeated_guest : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-04-08 11:19:54,849 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-04-08 11:19:54,850 - INFO - Doing Skewness HAndling
+2025-04-08 11:19:54,856 - INFO - Starting our Data Processing step
+2025-04-08 11:19:54,856 - INFO - Dropping the columns
+2025-04-08 11:19:54,865 - INFO - Applying Label Encoding
+2025-04-08 11:19:54,876 - INFO - Label Mappings are : 
+2025-04-08 11:19:54,876 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-04-08 11:19:54,876 - INFO - required_car_parking_space : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-04-08 11:19:54,876 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-04-08 11:19:54,876 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-04-08 11:19:54,876 - INFO - repeated_guest : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-04-08 11:19:54,876 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-04-08 11:19:54,877 - INFO - Doing Skewness HAndling
+2025-04-08 11:19:54,881 - INFO - Handling Imbalanced Data
+2025-04-08 11:19:55,094 - INFO - Data balanced sucesffuly
+2025-04-08 11:19:55,094 - INFO - Handling Imbalanced Data
+2025-04-08 11:19:55,128 - INFO - Data balanced sucesffuly
+2025-04-08 11:19:55,128 - INFO - Starting our Feature selection step
+2025-04-08 11:20:00,945 - INFO - Features selected : ['lead_time' 'no_of_special_requests' 'avg_price_per_room' 'arrival_month'
+ 'arrival_date' 'market_segment_type' 'no_of_week_nights'
+ 'no_of_weekend_nights' 'room_type_reserved' 'type_of_meal_plan']
+2025-04-08 11:20:00,948 - INFO - Feature slection completed sucesfully
+2025-04-08 11:20:00,949 - INFO - Saving our data in processed folder
+2025-04-08 11:20:01,130 - INFO - Data saved sucesfuly to artifacts/processed/processed_train.csv
+2025-04-08 11:20:01,130 - INFO - Saving our data in processed folder
+2025-04-08 11:20:01,180 - INFO - Data saved sucesfuly to artifacts/processed/processed_test.csv
+2025-04-08 11:20:01,180 - INFO - Data processing completed sucesfully
+2025-04-08 11:20:01,626 - INFO - Starting our Model Training pipeline
+2025-04-08 11:20:01,626 - INFO - Starting our MLFLOW experimentation
+2025-04-08 11:20:01,626 - INFO - Logging the training and testing datset to MLFLOW
+2025-04-08 11:20:01,631 - INFO - Loading data from artifacts/processed/processed_train.csv
+2025-04-08 11:20:01,631 - INFO - Loading data
+2025-04-08 11:20:01,673 - INFO - Loading data from artifacts/processed/processed_test.csv
+2025-04-08 11:20:01,673 - INFO - Loading data
+2025-04-08 11:20:01,686 - INFO - Data splitted sucefully for Model Training
+2025-04-08 11:20:01,686 - INFO - Initializing Our Model
+2025-04-08 11:20:01,686 - INFO - Started Our Hyparparameter tuning
+2025-04-08 11:20:01,686 - INFO - Started Our Hyparparameter tuning
+2025-04-08 11:28:21,141 - INFO - Hyperparameter tuning completed
+2025-04-08 11:28:21,142 - INFO - Best paramters are : {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2025-04-08 11:28:21,142 - INFO - Evaluating our model
+2025-04-08 11:28:21,335 - INFO - Accuracy Score : 0.8785969084423305
+2025-04-08 11:28:21,335 - INFO - Precision Score : 0.8634703196347032
+2025-04-08 11:28:21,335 - INFO - Recall Score : 0.8994054696789536
+2025-04-08 11:28:21,335 - INFO - F1 Score : 0.8810716365754222
+2025-04-08 11:28:21,336 - INFO - saving the model
+2025-04-08 11:28:21,414 - INFO - Model saved to artifacts/models/lgbm.pkl
+2025-04-08 11:28:21,414 - INFO - Logging the model into MLFLOW
+2025-04-08 11:28:21,419 - INFO - Logging Params and metrics to MLFLOW
+2025-04-08 11:28:21,434 - INFO - Model Training sucesfullly completed
+2025-04-08 11:28:21,437 - INFO - Model Training pipeline completed
+2025-04-08 11:28:21,437 - INFO - Completed our Model Training pipeline
+2025-04-08 12:40:13,544 - INFO - 🚀 Starting data ingestion process
+2025-04-08 12:40:14,681 - INFO - ✅ Data fetched from 'hotel_reservation' and saved to RAW folder at: artifacts/raw_csv/raw_data.csv
+2025-04-08 12:40:15,180 - INFO - ✅ Train and test data saved to: artifacts/train.csv, artifacts/test.csv
+2025-04-08 12:40:15,194 - INFO - ✅ Data ingestion process completed successfully
+2025-04-08 12:41:38,247 - INFO - 🚀 Starting data ingestion process
+2025-04-08 12:41:39,404 - INFO - ✅ Data fetched from 'hotel_reservation' and saved to RAW folder at: artifacts/raw_csv/raw_data.csv
+2025-04-08 12:41:39,890 - INFO - ✅ Train and test data saved to: artifacts/train.csv, artifacts/test.csv
+2025-04-08 12:41:39,904 - INFO - ✅ Data ingestion process completed successfully
+2025-04-08 12:41:39,908 - INFO - Loading data from RAW directory
+2025-04-08 12:41:39,908 - INFO - Loading data
+2025-04-08 12:41:40,028 - INFO - Loading data
+2025-04-08 12:41:40,060 - INFO - Starting our Data Processing step
+2025-04-08 12:41:40,060 - INFO - Dropping the columns
+2025-04-08 12:41:40,102 - INFO - Applying Label Encoding
+2025-04-08 12:41:40,137 - INFO - Label Mappings are : 
+2025-04-08 12:41:40,138 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-04-08 12:41:40,138 - INFO - required_car_parking_space : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-04-08 12:41:40,138 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-04-08 12:41:40,138 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-04-08 12:41:40,138 - INFO - repeated_guest : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-04-08 12:41:40,138 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-04-08 12:41:40,138 - INFO - Doing Skewness HAndling
+2025-04-08 12:41:40,147 - INFO - Starting our Data Processing step
+2025-04-08 12:41:40,147 - INFO - Dropping the columns
+2025-04-08 12:41:40,158 - INFO - Applying Label Encoding
+2025-04-08 12:41:40,171 - INFO - Label Mappings are : 
+2025-04-08 12:41:40,171 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-04-08 12:41:40,171 - INFO - required_car_parking_space : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-04-08 12:41:40,171 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-04-08 12:41:40,171 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-04-08 12:41:40,171 - INFO - repeated_guest : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-04-08 12:41:40,171 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-04-08 12:41:40,171 - INFO - Doing Skewness HAndling
+2025-04-08 12:41:40,177 - INFO - Handling Imbalanced Data
+2025-04-08 12:41:40,394 - INFO - Data balanced sucesffuly
+2025-04-08 12:41:40,394 - INFO - Handling Imbalanced Data
+2025-04-08 12:41:40,433 - INFO - Data balanced sucesffuly
+2025-04-08 12:41:40,434 - INFO - Starting our Feature selection step
+2025-04-08 12:41:47,221 - INFO - Features selected : ['lead_time' 'no_of_special_requests' 'avg_price_per_room' 'arrival_month'
+ 'arrival_date' 'market_segment_type' 'no_of_week_nights'
+ 'no_of_weekend_nights' 'room_type_reserved' 'type_of_meal_plan']
+2025-04-08 12:41:47,225 - INFO - Feature slection completed sucesfully
+2025-04-08 12:41:47,227 - INFO - Saving our data in processed folder
+2025-04-08 12:41:47,429 - INFO - Data saved sucesfuly to artifacts/processed/processed_train.csv
+2025-04-08 12:41:47,429 - INFO - Saving our data in processed folder
+2025-04-08 12:41:47,485 - INFO - Data saved sucesfuly to artifacts/processed/processed_test.csv
+2025-04-08 12:41:47,485 - INFO - Data processing completed sucesfully
+2025-04-08 12:41:48,021 - INFO - Starting our Model Training pipeline
+2025-04-08 12:41:48,021 - INFO - Starting our MLFLOW experimentation
+2025-04-08 12:41:48,021 - INFO - Logging the training and testing datset to MLFLOW
+2025-04-08 12:41:48,027 - INFO - Loading data from artifacts/processed/processed_train.csv
+2025-04-08 12:41:48,028 - INFO - Loading data
+2025-04-08 12:41:48,077 - INFO - Loading data from artifacts/processed/processed_test.csv
+2025-04-08 12:41:48,078 - INFO - Loading data
+2025-04-08 12:41:48,093 - INFO - Data splitted sucefully for Model Training
+2025-04-08 12:41:48,093 - INFO - Initializing Our Model
+2025-04-08 12:41:48,093 - INFO - Started Our Hyparparameter tuning
+2025-04-08 12:41:48,093 - INFO - Started Our Hyparparameter tuning
+2025-04-08 12:47:18,941 - INFO - Hyperparameter tuning completed
+2025-04-08 12:47:18,941 - INFO - Best paramters are : {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2025-04-08 12:47:18,941 - INFO - Evaluating our model
+2025-04-08 12:47:19,144 - INFO - Accuracy Score : 0.8785969084423305
+2025-04-08 12:47:19,144 - INFO - Precision Score : 0.8634703196347032
+2025-04-08 12:47:19,144 - INFO - Recall Score : 0.8994054696789536
+2025-04-08 12:47:19,144 - INFO - F1 Score : 0.8810716365754222
+2025-04-08 12:47:19,145 - INFO - saving the model
+2025-04-08 12:47:19,220 - INFO - Model saved to artifacts/models/lgbm.pkl
+2025-04-08 12:47:19,220 - INFO - Logging the model into MLFLOW
+2025-04-08 12:47:19,224 - INFO - Logging Params and metrics to MLFLOW
+2025-04-08 12:47:19,237 - INFO - Model Training sucesfullly completed
+2025-04-08 12:47:19,240 - INFO - Model Training pipeline completed
+2025-04-08 12:47:19,240 - INFO - Completed our Model Training pipeline
