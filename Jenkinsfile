@@ -3,6 +3,7 @@ pipeline {
 
     environment {
         VENV_DIR = 'venv'
+        DEPLOY_HOOK_URL = 'https://api.render.com/deploy/srv-cvqghsh5pdvs73acv2mg?key=YuAoYfC94b8'
     }
 
     stages {
@@ -28,6 +29,15 @@ pipeline {
                     echo 'Setting up virtual environment and installing dependencies............'
                     sh 'python -m venv $VENV_DIR'
                     sh '. $VENV_DIR/bin/activate && pip install -r requirements.txt'
+                }
+            }
+        }
+
+        stage('Trigger Render Deployment') {
+            steps {
+                script {
+                    echo 'Triggering deployment on Render...'
+                    sh "curl -X POST '${DEPLOY_HOOK_URL}'"
                 }
             }
         }
